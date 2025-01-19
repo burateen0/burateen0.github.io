@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3: Наведение мыши</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="back">
+        <a href="../index.html" title="Вернуться в меню">
+            <img src="images/back.png" alt="Назад">
+        </a>
+    </div>
+
+    <h1>Задание 3: Наведение мыши</h1>
+    <div id="task3-container">
+        <input type="text" id="field1" placeholder="Поле 1">
+        <input type="text" id="field2" placeholder="Поле 2">
+        <input type="text" id="field3" placeholder="Поле 3">
+    </div>
+    <p id="hoverInfo"></p>
+
+    <div class="author">
+        Торопыгин Д.А 3522Б1ПИ2
+    </div>
+
+    <script>
+        document.querySelectorAll("#task3-container input").forEach(field => {
+            field.addEventListener("mouseover", () => {
+                field.focus();
+                document.getElementById('hoverInfo').textContent = `ID: ${field.id}`;
+            });
+
+            field.addEventListener("mouseout", () => {
+                field.blur();
+                document.getElementById('hoverInfo').textContent = '';
+            });
+        });
+    </script>
+</body>
+</html>

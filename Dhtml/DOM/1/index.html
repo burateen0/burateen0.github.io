@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изменение изображения</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="back">
+        <a href="../index.html" title="Вернуться в меню">
+            <img src="images/back.png" alt="Назад">
+        </a>
+    </div>
+
+    <div class="task">
+        <h1>Изменение изображения</h1>
+        <input type="text" id="imageUrlInput" placeholder="Введите URL изображения">
+        <button onclick="changeImage()">Поменять картинку</button>
+        <br><br>
+        <img id="imageDisplay" src="images/back.png" alt="Default Image" width="300">
+    </div>
+    <div class="author">Торопыгин Д.А 3522Б1ПИ2</div>
+    <script>
+        function changeImage() {
+            const urlInput = document.getElementById("imageUrlInput").value;
+            const imageElement = document.getElementById("imageDisplay");
+            imageElement.src = urlInput || "images/default.jpg";
+        }
+    </script>
+</body>
+</html>

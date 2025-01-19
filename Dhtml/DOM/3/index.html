@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изменение цветов</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="back">
+        <a href="../index.html" title="Вернуться в меню">
+            <img src="images/back.png" alt="Назад">
+        </a>
+    </div>
+
+    <div class="task">
+        <h1>Изменение цветов</h1>
+        <div class="form-group">
+            <input type="text" id="textColorField" placeholder="Цвет текста (например, red)">
+            <input type="text" id="backgroundColorField" placeholder="Цвет фона (например, yellow)">
+        </div>
+        <button onclick="setParagraphColors()">Применить цвета</button>
+        <p id="colorParagraph">Цвет изменится здесь</p>
+    </div>
+    <div class="author">Торопыгин Д.А 3522Б1ПИ2</div>
+    <script>
+        function setParagraphColors() {
+            const textColor = document.getElementById("textColorField").value;
+            const backgroundColor = document.getElementById("backgroundColorField").value;
+            const paragraph = document.getElementById("colorParagraph");
+            paragraph.style.color = textColor;
+            paragraph.style.backgroundColor = backgroundColor;
+        }
+    </script>
+</body>
+</html>

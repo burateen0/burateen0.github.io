@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e1d6f5; /* Однотонный фон */
+    color: #3e2a8c;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.task {
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #4a3e9b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #6b43aa;
+}
+
+img {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.author {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 0.9em;
+    color: #333;
+    font-style: italic;
+}
+
+.back {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 20px; /* Отступ сверху */
+    left: 20px; /* Отступ слева */
+}
+
+.back a {
+    display: inline-block; /* Блочное поведение */
+    background-color: transparent; /* Убираем фон */
+    padding: 0; /* Убираем внутренние отступы */
+
+}
+
+.back img {
+    background-color: transparent; /* Убираем фон у изображения */
+    width: 30px; /* Задаём ширину иконки */
+    height: 30px; /* Задаём высоту иконки */
+    cursor: pointer; /* Указываем, что это кликабельный элемент */
+    transition: transform 0.3s ease; /* Добавляем анимацию масштабирования */
+}

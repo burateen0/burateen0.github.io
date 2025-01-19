@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание №2</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <p>2. Написать функцию, которая преобразует строку, переданную в качестве аргумента, так, чтобы все слова в ней заканчивались большой буквой (будем считать, что слова отделяются друг от друга одним пробелом). </p>
+    <form id="string-form">
+        <textarea id="input-string" rows="4" cols="50" placeholder="Введите строку здесь..."></textarea>
+        <button type="button" onclick="transformString()">Преобразовать</button>
+    </form>
+    <h2>Результат:</h2>
+    <div id="result"></div>
+
+    <script>
+        function transformString() {
+            const inputString = document.getElementById('input-string').value.trim();
+            if (!inputString) {
+                document.getElementById('result').textContent = 'Введите строку!';
+                return;
+            }
+
+            const transformedString = inputString
+                .split(' ') // Разбиваем строку на массив слов
+                .map(word => {
+                    if (word.length > 0) {
+                        const lastChar = word[word.length - 1].toUpperCase(); // Делаем последний символ заглавным
+                        return word.slice(0, -1) + lastChar; // Склеиваем слово
+                    }
+                    return word;
+                })
+                .join(' '); // Собираем строку обратно
+
+            document.getElementById('result').textContent = transformedString;
+        }
+    </script>
+
+    <div class="author">
+        Торопыгин Д.А 3522Б1ПИ2
+    </div>
+
+</body>
+</html>

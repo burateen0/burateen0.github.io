@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1: Подтверждение действий</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="back">
+        <a href="../index.html" title="Вернуться в меню">
+            <img src="images/back.png" alt="Назад">
+        </a>
+    </div>
+
+    <h1>Задание 1: Подтверждение действий</h1>
+    <form id="form1">
+        <textarea id="message" placeholder="Текст"></textarea><br>
+        <input type="checkbox" id="checkbox"> Чекбокс<br>
+        <button type="button" onclick="handleAction()">Подтвердить действие</button>
+    </form>
+
+    <div class="author">
+        Торопыгин Д.А 3522Б1ПИ2
+    </div>
+
+    <script>
+        function handleAction() {
+            const isConfirmed = confirm("Вы уверены?");
+            const messageField = document.getElementById('message');
+            const checkbox = document.getElementById('checkbox');
+
+            if (isConfirmed) {
+                messageField.value = "Действие подтверждено!";
+                checkbox.checked = true;
+            } else {
+                document.getElementById('form1').reset();
+            }
+        }
+    </script>
+</body>
+</html>

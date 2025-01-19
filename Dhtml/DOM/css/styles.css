@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f4f4f9, #e1d6f5);
+    color: #3e2a8c;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #4a3e9b;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    font-size: 4em;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #6b43aa;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%; /* Список занимает всю ширину */
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #4a3e9b;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 5px;
+    width: 100%; /* Полная ширина ссылок */
+    max-width: 400px; /* Ограничение ширины для больших экранов */
+    margin: 0 auto;
+    transition: background-color 0.3s ease, transform 0.4s ease, box-shadow 0.2s ease;
+}
+
+
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Кнопки будут располагаться вертикально */
+    align-items: center; /* Центрируем кнопки по горизонтали */
+    gap: 20px; /* Добавляем расстояние между рядами */
+    width: 100%;
+    max-width: 800px; /* Ограничиваем максимальную ширину */
+    margin: 0 auto; /* Центрируем контейнер */
+}
+
+.buttons {
+    display: flex; /* Располагаем кнопки в строке */
+    gap: 10px; /* Добавляем промежутки между кнопками */
+    justify-content: center; /* Центрируем кнопки по горизонтали */
+    width: 100%;
+}
+
+.greenbuttons {
+    display: flex; /* Располагаем кнопки в строке */
+    gap: 10px; /* Добавляем промежутки между кнопками */
+    justify-content: center; /* Центрируем кнопки по горизонтали */
+    width: 100%;
+}
+
+.greenbuttons a:nth-child(1),
+.greenbuttons a:nth-child(2) {
+    background-color: green; /* Зеленый цвет фона */
+    color: white; /* Белый цвет текста */
+}
+
+.greenbuttons a:nth-child(1):hover,
+.greenbuttons a:nth-child(2):hover {
+    background-color: darkgreen; /* Цвет при наведении */
+}
+
+
+
+a:hover {
+    background-color: #6b43aa;
+    transform: scale(1.05);
+    color: #e1d6f5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.author {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 0.9em;
+    color: #333;
+    font-style: italic;
+}
+
+.back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back a {
+    display: inline-block;
+    background-color: transparent;
+    padding: 0;
+}
+
+.back img {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.back img:hover {
+    transform: scale(1.1);
+}
+
+.author {
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 20px; /* Отступ от нижнего края */
+    left: 20px; /* Отступ от левого края */
+    font-size: 0.9em; /* Размер текста */
+    color: #333; /* Цвет текста */
+    font-style: italic; /* Курсив для стиля */
+}

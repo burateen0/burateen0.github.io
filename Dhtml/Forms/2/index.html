@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2: Блокировка текстового поля</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="back">
+        <a href="../index.html" title="Вернуться в меню">
+            <img src="images/back.png" alt="Назад">
+        </a>
+    </div>
+
+    <h1>Задание 2: Блокировка текстового поля</h1>
+    <textarea id="textField" placeholder="Текст"></textarea><br>
+    <button type="button" onclick="lockField()">Заблокировать</button>
+    <button type="button" onclick="unlockField()">Разблокировать</button>
+
+    <div class="author">
+        Торопыгин Д.А 3522Б1ПИ2
+    </div>
+
+    <script>
+        function lockField() {
+            document.getElementById('textField').disabled = true;
+        }
+
+        function unlockField() {
+            document.getElementById('textField').disabled = false;
+        }
+    </script>
+</body>
+</html>

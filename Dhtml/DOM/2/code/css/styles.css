@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f4f4f9, #e1d6f5);
+    color: #3e2a8c;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #4a3e9b;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    font-size: 4em;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #6b43aa;
+    font-size: 2.2em;
+    font-weight: bold;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%; /* Кнопки во весь экран */
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #4a3e9b;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 5px;
+    width: 100%; /* Полная ширина кнопок */
+    max-width: 400px; /* Ограничение ширины для больших экранов */
+    margin: 0 auto;
+    transition: background-color 0.3s ease, transform 0.4s ease, box-shadow 0.2s ease;
+}
+
+a:hover {
+    background-color: #6b43aa;
+    color: #e1d6f5;
+}
+
+a:hover {
+    background-color: #6b43aa; /* Цвет при наведении */
+    transform: scale(1.05); /* Лёгкое увеличение */
+    color: #e1d6f5; /* Цвет текста при наведении */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Лёгкая тень */
+}
+
+.author {
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 20px; /* Отступ от нижнего края */
+    left: 20px; /* Отступ от левого края */
+    font-size: 0.9em; /* Размер текста */
+    color: #333; /* Цвет текста */
+    font-style: italic; /* Курсив для стиля */
+}
+
+
+.back {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 20px; /* Отступ сверху */
+    left: 20px; /* Отступ слева */
+}
+
+.back a {
+    display: inline-block; /* Блочное поведение */
+    background-color: transparent; /* Убираем фон */
+    padding: 0; /* Убираем внутренние отступы */
+
+}
+
+.back img {
+    background-color: transparent; /* Убираем фон у изображения */
+    width: 30px; /* Задаём ширину иконки */
+    height: 30px; /* Задаём высоту иконки */
+    cursor: pointer; /* Указываем, что это кликабельный элемент */
+    transition: transform 0.3s ease; /* Добавляем анимацию масштабирования */
+}
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание №3</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <p>3. Возьмите, две любые картинки. Сделайте так, чтобы на Вашей странице через случайные промежутки времени одна картинка сменялась другой. </p>
+    <div id="image-container">
+        <img id="changing-image" src="images/image1.png" alt="Первое изображение">
+    </div>
+
+    <script>
+        const images = ["images/image1.png", "images/image2.png"]; // Путь к изображениям
+        const imageElement = document.getElementById("changing-image");
+
+        function changeImage() {
+            const randomIndex = Math.floor(Math.random() * images.length);
+            const randomTime = Math.random() * (5000 - 1000) + 1000; // От 1 до 5 секунд
+            imageElement.src = images[randomIndex];
+
+            setTimeout(changeImage, randomTime); // Рекурсивный вызов через случайный промежуток
+        }
+
+        setTimeout(changeImage, 1000); // Начинаем смену через 1 секунду
+    </script>
+
+    <div class="author">
+        Торопыгин Д.А 3522Б1ПИ2
+    </div>
+
+</body>
+</html>

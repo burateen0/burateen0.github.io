@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4: Чекбоксы и текстовые поля</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="back">
+        <a href="../index.html" title="Вернуться в меню">
+            <img src="images/back.png" alt="Назад">
+        </a>
+    </div>
+
+    <h1>Задание 4: Чекбоксы и текстовые поля</h1>
+    <div>
+        <input type="checkbox" id="checkbox1" onchange="toggleField('field1')"> Поле 1<br>
+        <input type="text" id="field1" style="display: none;">
+    </div>
+    <div>
+        <input type="checkbox" id="checkbox2" onchange="toggleField('field2')"> Поле 2<br>
+        <input type="text" id="field2" style="display: none;">
+    </div>
+    <div>
+        <input type="checkbox" id="checkbox3" onchange="toggleField('field3')"> Поле 3<br>
+        <input type="text" id="field3" style="display: none;">
+    </div>
+
+    <div class="author">
+        Торопыгин Д.А 3522Б1ПИ2
+    </div>
+
+    <script>
+        function toggleField(fieldId) {
+            const field = document.getElementById(fieldId);
+            field.style.display = field.style.display === 'none' ? 'inline' : 'none';
+        }
+    </script>
+</body>
+</html>

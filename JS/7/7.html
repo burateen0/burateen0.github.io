@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>№7 JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="back">
+        <a href="../index.html" title="Вернуться в меню">
+            <img src="images/back.png" alt="Назад">
+        </a>
+    </div>
+
+    <h1>№7 JavaScript</h1>
+
+    <h2>Задание 1: День недели по дате</h2>
+    <p>Введите дату в формате YYYY-MM-DD:</p>
+    <input type="text" id="dateInput" placeholder="Введите дату">
+    <button onclick="displayDayOfWeek()">Получить день недели</button>
+    <p id="result1" class="result"></p>
+    <p><a href="js/task1.js" target="_blank">Посмотреть исходный код</a></p>
+
+    <h2>Задание 2: Сколько дней до нового года?</h2>
+    <button onclick="NewYear()">Посчитать дни до нового года</button>
+    <p id="result2" class="result"></p>
+    <p><a href="js/task2.js" target="_blank">Посмотреть исходный код</a></p>
+
+    <h2>Задание 3: Предыдущий, текущий и следующий день недели</h2>
+    <button onclick="Days()">Получить соседние дни</button>
+    <p id="result3" class="result"></p>
+    <p><a href="js/task3.js" target="_blank">Посмотреть исходный код</a></p>
+
+    <h2>Задание 4: Преобразование миллисекунд в дни, часы, минуты и секунды</h2>
+    <p>Введите количество миллисекунд:</p>
+    <input type="number" id="msInput" placeholder="Введите миллисекунды">
+    <button onclick="ConvertTime()">Преобразовать</button>
+    <p id="result4" class="result"></p>
+    <p><a href="js/task4.js" target="_blank">Посмотреть исходный код</a></p>
+
+    <h2>Задание 5: Ваш возраст</h2>
+    <p>Введите вашу дату рождения (YYYY-MM-DD):</p>
+    <input type="text" id="birthDateInput" placeholder="Введите дату">
+    <button onclick="FindAge()">Посчитать возраст</button>
+    <p id="result5" class="result"></p>
+    <p><a href="js/task5.js" target="_blank">Посмотреть исходный код</a></p>
+
+    <h2>Задание 6: Пятницы 13 числа в этом году</h2>
+    <button onclick="ThisYearFridays13()">Посмотреть пятницы 13 числа</button>
+    <ul id="fridays13List" class="result-list"></ul>
+    <p><a href="js/task6.js" target="_blank">Посмотреть исходный код</a></p>
+
+    <h2>Задание 7: Приветствие в зависимости от времени суток</h2>
+    <button onclick="Hi()">Приветствие</button>
+    <p id="result7" class="result"></p>
+    <p><a href="js/task7.js" target="_blank">Посмотреть исходный код</a></p>
+
+    <h2>Задание 8: Праздники в этом году</h2>
+    <button onclick="ThisYearHolidays()">Показать праздники</button>
+    <ul class="holidays-list" id="result8"></ul>
+    <p><a href="js/task8.js" target="_blank">Посмотреть исходный код</a></p>
+
+    <script src="js/script.js"></script>
+
+    <div class="author">
+        Торопыгин Д.А 3522Б1ПИ2
+    </div>
+
+</body>
+</html>

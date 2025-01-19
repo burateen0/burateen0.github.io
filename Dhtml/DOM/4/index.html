@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изменение рамки таблицы</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="back">
+        <a href="../index.html" title="Вернуться в меню">
+            <img src="images/back.png" alt="Назад">
+        </a>
+    </div>
+
+    <div class="task">
+        <h1>Изменение рамки таблицы</h1>
+        <div class="form-group">
+            <input type="text" id="tableBorderWidth" placeholder="Толщина рамки (например, 2px)">
+            <input type="text" id="tableBorderColor" placeholder="Цвет рамки (например, blue)">
+        </div>
+        <button onclick="updateTableStyles()">Изменить рамку</button>
+        <table id="styledTable">
+            <tr>
+                <td>Ячейка 1</td>
+                <td>Ячейка 2</td>
+            </tr>
+            <tr>
+                <td>Ячейка 3</td>
+                <td>Ячейка 4</td>
+            </tr>
+        </table>
+    </div>
+    <div class="author">Торопыгин Д.А 3522Б1ПИ2</div>
+    <script>
+        function updateTableStyles() {
+            const borderWidth = document.getElementById("tableBorderWidth").value;
+            const borderColor = document.getElementById("tableBorderColor").value;
+            const table = document.getElementById("styledTable");
+            table.style.border = `${borderWidth} solid ${borderColor}`;
+            const cells = table.getElementsByTagName("td");
+            for (let cell of cells) {
+                cell.style.border = `${borderWidth} solid ${borderColor}`;
+            }
+        }
+    </script>
+</body>
+</html>

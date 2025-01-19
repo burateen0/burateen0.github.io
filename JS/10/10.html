@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>№9-2 JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="back">
+        <a href="../index.html" title="Вернуться в меню">
+            <img src="images/back.png" alt="Назад">
+        </a>
+    </div>
+
+    <div class="container">
+        <h1>Калькулятор услуг печати</h1>
+        <table class="calculator-table">
+            <thead>
+                <tr>
+                    <th>Услуга</th>
+                    <th>Цена за ед.</th>
+                    <th>Количество</th>
+                    <th>Итого за услугу</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Черно-белая печать (лист)</td>
+                    <td>20</td>
+                    <td><input type="number" id="bwPrintQ" min="0" value="0"></td>
+                    <td id="sum0">0</td>
+                </tr>
+                <tr>
+                    <td>Черно-белая копия (лист)</td>
+                    <td>15</td>
+                    <td><input type="number" id="bwCopyQ" min="0" value="0"></td>
+                    <td id="sum1">0</td>
+                </tr>
+                <tr>
+                    <td>Цветная печать (лист)</td>
+                    <td>50</td>
+                    <td><input type="number" id="colorPrintQ" min="0" value="0"></td>
+                    <td id="sum2">0</td>
+                </tr>
+                <tr>
+                    <td>Цветная копия (лист)</td>
+                    <td>40</td>
+                    <td><input type="number" id="colorCopyQ" min="0" value="0"></td>
+                    <td id="sum3">0</td>
+                </tr>
+                <tr>
+                    <td>Фото 30x40</td>
+                    <td>60</td>
+                    <td><input type="number" id="photo30x40Q" min="0" value="0"></td>
+                    <td id="sum4">0</td>
+                </tr>
+                <tr>
+                    <td>Фото 50x60</td>
+                    <td>100</td>
+                    <td><input type="number" id="photo50x60Q" min="0" value="0"></td>
+                    <td id="sum5">0</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><strong>ИТОГО:</strong></td>
+                    <td id="itogo">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <p><a href="js/script.js" target="_blank">Посмотреть исходный код</a></p>
+
+    <div class="author">
+        Торопыгин Д.А 3522Б1ПИ2
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

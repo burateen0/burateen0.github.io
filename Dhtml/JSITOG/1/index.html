@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание №1</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <p>1. Создать HTML-страницу, которая при загрузке сообщает, на какой день недели выпадает 13-ое число текущего месяца. </p>
+    <div id="result"></div>
+
+    <script>
+        function getDayOfWeekFor13th() {
+            const currentDate = new Date();
+            const year = currentDate.getFullYear();
+            const month = currentDate.getMonth(); // Индекс месяцев начинается с 0
+
+            const date13th = new Date(year, month, 13);
+            const daysOfWeek = ["воскресенье", "понедельник", "вторник", "среду", "четверг", "пятницу", "субботу"];
+
+            return `13-е число выпадает на ${daysOfWeek[date13th.getDay()]}.`;
+        }
+
+        document.getElementById('result').textContent = getDayOfWeekFor13th();
+    </script>
+
+    <div class="author">
+        Торопыгин Д.А 3522Б1ПИ2
+    </div>
+
+</body>
+</html>
