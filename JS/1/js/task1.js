@@ -7,6 +7,6 @@ function checkIfNumber() {
         alert("Это не число! Пожалуйста, введите число.");
         return false;
     }
-
-    return true;
+	alert(`${chislo} - число`);
+	console.log(`${chislo} - число`);
 }

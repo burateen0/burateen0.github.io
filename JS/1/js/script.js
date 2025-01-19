@@ -7,8 +7,8 @@ function checkIfNumber() {
         alert("Это не число! Пожалуйста, введите число.");
         return false;
     }
-
-    return true;
+	alert(`${chislo} - число`);
+	console.log(`${chislo} - число`);
 }
 
 // Задание 2
@@ -24,11 +24,11 @@ function checkSign() {
 
     // Определяем знак
     if (chislo > 0) {
-        alert(`Введенное число ${chislo} положительное.`);
+        console.log(`Введенное число ${chislo} положительное.`);
     } else if (chislo < 0) {
-        alert(`Введенное число ${chislo} отрицательное.`);
+        console.log(`Введенное число ${chislo} отрицательное.`);
     } else {
-        alert("Введенное число 0 не положительное и не отрицательное.");
+        console.log("Введенное число 0 не положительное и не отрицательное.");
     }
 }
 
